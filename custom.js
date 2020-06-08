@@ -12,10 +12,16 @@ $(document).ready(function(){
 
     $('.emoji-button').on('click',function(){
         _this = $(this);
-        var shareurl = window.location.hostname  + _this.closest('.entry-img-div').next().next().children('.view-diary-btn').attr('href');
-        $('#copy_clip').val(shareurl);
-        $('#copy_clip').select();
-        document.execCommand("copy");
-        return false;        
+        _this.addClass('show'); setTimeout(function(){$('.emoji-button').removeClass('show');}, 2000);
+       shareurl = window.location.hostname  + _this.closest('.entry-box').find('.entry-btns-block').children('.view-diary-btn').attr('href');
+        $('#copy_clip1').text(shareurl);
+       var el = document.getElementById('copy_clip');
+       var range = document.createRange();
+       range.selectNodeContents(el);
+       var sel = window.getSelection();
+       sel.removeAllRanges();
+       sel.addRange(range);
+       document.execCommand('copy');
+       return false;     
     });
 })
