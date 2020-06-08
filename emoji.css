@@ -76,10 +76,10 @@ display:none;
 
 
 
-.emoji-section .emoji .icon:hover:after {
+.emoji-section .emoji:hover:after {
     opacity: 1;
 }
-.emoji-section .emoji .icon:after {
+.emoji-section .emoji:after {
    text-align: center;
     display: block;
     position: absolute;
@@ -93,9 +93,9 @@ display:none;
     opacity: 0;
 }
 
-.emoji-button .emoji-container .emoji .icon:active {
+/* .emoji-button .emoji-container .emoji:active {
     transform: scale(0.8, 0.8) translate(0, -6px) !important;
-}
+} */
 .emoji-button {
    background: #fff;
     border: 0;
