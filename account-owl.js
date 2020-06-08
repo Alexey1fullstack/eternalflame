@@ -2,11 +2,11 @@ $('.entry-list').owlCarousel({
        
     margin: 30,
     responsiveClass: true,
-    nav: true,
+    nav: false,
     responsive: {
         0: {
             items: 1,
-            nav: true
+            nav: false
         },
         600: {
             items: 2,
@@ -14,11 +14,11 @@ $('.entry-list').owlCarousel({
         },
         1000: {
             items: 3,
-            nav: true
+            nav: false
         },
         1600: {
             items: 3,
-            nav: true,
+            nav: false,
         }
     },
      
