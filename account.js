@@ -30,11 +30,11 @@ $(document).ready(function(){
 
     $('.entry-edit-btn').on('click',function(){
         _this = $(this);
-        _id = _this.parent().parent().find('entry-item-header-wrap').children('.entry-item-cid').text();
-        _title =  _this.parent().parent().find('entry-item-header-wrap').children('.entry-item-title').text();
-        _date =  _this.parent().parent().find('entry-item-header-wrap').children('.entry-item-date').text();
-        _content = _this.parent().parent().find('entry-item-header-wrap').children('.entry-content').text();
-        _entry_type =  _this.parent().parent().find('entry-item-header-wrap').children('.entry-type').text();
+        _id = _this.closest('.entry-box').find('entry-item-header-wrap').children('.entry-item-cid').text();
+        _title =  _this.closest('.entry-box').find('entry-item-header-wrap').children('.entry-item-title').text();
+        _date =  _this.closest('.entry-box').find('entry-item-header-wrap').children('.entry-item-date').text();
+        _content = _this.closest('.entry-box').find('entry-item-header-wrap').children('.entry-content').text();
+        _entry_type =  _this.closest('.entry-box').find('entry-item-header-wrap').children('.entry-type').text();
         _uid = $('account-page-id').val();
         $('#c_entry_title').val(_title);
         $('#c_entry_content').val(_content);
