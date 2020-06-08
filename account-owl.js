@@ -1,6 +1,6 @@
 $('.entry-list').owlCarousel({
        
-    margin: 10,
+    margin: 30,
     responsiveClass: true,
     nav: true,
     responsive: {
@@ -17,7 +17,7 @@ $('.entry-list').owlCarousel({
             nav: true
         },
         1600: {
-            items: 4,
+            items: 3,
             nav: true,
         }
     },
