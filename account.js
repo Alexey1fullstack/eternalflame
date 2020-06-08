@@ -21,7 +21,7 @@ $(document).ready(function(){
         // var id = $(this).attr('id');
         var el = document.getElementById('copy_clip1');
         var range = document.createRange();
-        range.selectNodeContents(shareurl);
+        range.selectNodeContents(el);
         var sel = window.getSelection();
         sel.removeAllRanges();
         sel.addRange(range);
