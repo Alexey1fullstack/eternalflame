@@ -76,19 +76,28 @@ display:none;
 
 
 .emoji-button:after {
-    text-align: center;
-     display: block;   
-     position: absolute;
-     bottom: 27px;
-     font-size: 16px;
-     content: attr(data-title);
-     background-color: rgba(0, 0, 0, 0.8);
-     color: #ffffff;
-     padding: 10px 32px;
-     border-radius: 5px;
-     opacity: 0;
-     transition: opacity 0.3s;
- }
+  text-align: center;
+  display: block;
+  position: absolute;
+  bottom: 28px;
+  font-size: 15px;
+  content: 'Copied!';
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-left: -30px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 300;
+}
+
+
+.show:after{
+    opacity: 1;
+}
+
+
 
 .emoji-button {
    background: #fff;
