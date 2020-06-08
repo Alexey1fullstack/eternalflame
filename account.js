@@ -26,8 +26,8 @@ $(document).ready(function(){
         sel.removeAllRanges();
         sel.addRange(range);
         document.execCommand('copy');
-        _this.addClass('show'); setTimeout(function(){$('.emoji-button').removeClass('show');}, 1500)
-        alert("Contents copied to clipboard.");
+        _this.addClass('show'); setTimeout(function(){$('.emoji-button').removeClass('show');}, 2000)
+        
         return false;
 
     });
