@@ -14,7 +14,7 @@ $(document).ready(function(){
         _this = $(this);
         _this.addClass('show'); setTimeout(function(){$('.emoji-button').removeClass('show');}, 2000);
        shareurl = window.location.hostname  + _this.closest('.entry-box').find('.entry-btn-block').children('.view-diary-btn').attr('href');
-        $('#copy_clip1').text(shareurl);
+        $('#copy_clip').text(shareurl);
        var el = document.getElementById('copy_clip');
        var range = document.createRange();
        range.selectNodeContents(el);
