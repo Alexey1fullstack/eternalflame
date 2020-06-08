@@ -24,4 +24,15 @@ $(document).ready(function(){
        document.execCommand('copy');
        return false;     
     });
+
+    var owl = $('.owl-carousel');
+    owl.owlCarousel();
+    // Go to the next item
+    $('#entry_arrow_right').click(function() {
+        owl.trigger('next.owl.carousel');
+    })
+    // Go to the previous item
+    $('#entry_arrow_left').click(function() {
+        owl.trigger('prev.owl.carousel', [300]);
+    })
 })

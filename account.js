@@ -33,9 +33,7 @@ $(document).ready(function(){
         owl.trigger('next.owl.carousel');
     })
     // Go to the previous item
-    $('entry_arrow_left').click(function() {
-        // With optional speed parameter
-        // Parameters has to be in square bracket '[]'
+    $('#entry_arrow_left').click(function() {
         owl.trigger('prev.owl.carousel', [300]);
     })
 
