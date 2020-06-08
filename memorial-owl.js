@@ -1,6 +1,6 @@
 $('.entry-list').owlCarousel({
        
-    margin: 30,
+    margin: 15,
     responsiveClass: true,
     nav: false,
     responsive: {
