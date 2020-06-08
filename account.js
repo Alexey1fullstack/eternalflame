@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 
     $('.emoji-button').on('click',function(){
-        // _this = $(this);
+         _this = $(this);
         shareurl = window.location.hostname  + _this.closest('.entry-box').find('.entry-btns-block').children('.view-diary-btn').attr('href');
         // $('#copy_clip').val(shareurl);
         // $('#copy_clip').select();
