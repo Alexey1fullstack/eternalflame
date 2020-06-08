@@ -12,6 +12,7 @@ $(document).ready(function(){
 
     $('.emoji-button').on('click',function(){
          _this = $(this);
+         _this.addClass('show'); setTimeout(function(){$('.emoji-button').removeClass('show');}, 2000);
         shareurl = window.location.hostname  + _this.closest('.entry-box').find('.entry-btns-block').children('.view-diary-btn').attr('href');
          $('#copy_clip1').text(shareurl);
         // $('#copy_clip').select();
@@ -26,8 +27,7 @@ $(document).ready(function(){
         sel.removeAllRanges();
         sel.addRange(range);
         document.execCommand('copy');
-        _this.addClass('show'); setTimeout(function(){$('.emoji-button').removeClass('show');}, 2000)
-        
+        alert("Contents copied to clipboard.");
         return false;
 
     });
