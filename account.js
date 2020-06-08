@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('.emoji-button').on('click',function(){
          _this = $(this);
          _this.addClass('show'); setTimeout(function(){$('.emoji-button').removeClass('show');}, 2000);
-        shareurl = window.location.hostname  + _this.closest('.entry-box').find('.entry-btn-block').children('.view-diary-btn').attr('href');
+        shareurl = window.location.hostname  + _this.closest('.entry-box').find('.entry-btns-block').children('.view-diary-btn').attr('href');
          $('#copy_clip1').text(shareurl);
         var el = document.getElementById('copy_clip1');
         var range = document.createRange();
