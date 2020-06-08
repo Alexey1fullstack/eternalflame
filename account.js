@@ -27,7 +27,6 @@ $(document).ready(function(){
         sel.removeAllRanges();
         sel.addRange(range);
         document.execCommand('copy');
-        alert("Contents copied to clipboard.");
         return false;
 
     });
